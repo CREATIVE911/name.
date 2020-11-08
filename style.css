@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+html{font-size: 62.5%;}
+.center{
+    width: 100%;
+    height: 100vh;
+    background-color: #2f3542;
+    display: grid;
+    place-items: center;
+}
+h1{
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+}
+h1::before{
+    content: "~Divit_Gamer_YT~";
+    width: 100%;
+    color: #3ae374;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 0.4rem solid  #3ae374;
+    animation: slide 5s linear infinite;
+    overflow: hidden;
+}
+@keyframes slide{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
